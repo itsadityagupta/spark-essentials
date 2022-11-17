@@ -1,4 +1,4 @@
-# The official repository for the Rock the JVM Spark Essentials with Scala course
+# Spark code exercises
 
 This repository contains the code we wrote during  [Rock the JVM's Spark Essentials with Scala](https://rockthejvm.com/course/spark-essentials) (Udemy version [here](https://udemy.com/spark-essentials)) Unless explicitly mentioned, the code in this repository is exactly what was caught on camera.
 
