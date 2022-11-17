@@ -104,6 +104,8 @@ object DataSources extends App {
     .option("dbtable", "public.employees")
     .load()
 
+  employeesDF.show()
+
   /**
     * Exercise: read the movies DF, then write it as
     * - tab-separated values file
