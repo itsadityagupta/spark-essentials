@@ -59,13 +59,13 @@ object ColumnsAndExpressions extends App {
   // renaming a column
   val carsWithColumnRenamed = carsDF.withColumnRenamed("Weight_in_lbs", "Weight in pounds")
   // careful with column names
-  carsWithColumnRenamed.selectExpr("`Weight in pounds`")
+  carsWithColumnRenamed.selectExpr("`Weight in pounds`") //backticks used because of spaces (or -) in the column name
   // remove a column
   carsWithColumnRenamed.drop("Cylinders", "Displacement")
 
   // filtering
-  val europeanCarsDF = carsDF.filter(col("Origin") =!= "USA")
-  val europeanCarsDF2 = carsDF.where(col("Origin") =!= "USA")
+  val europeanCarsDF = carsDF.filter(col("Origin") =!= "USA")// =!= is not equals operator. === is for equals while filtering
+  val europeanCarsDF2 = carsDF.where(col("Origin") =!= "USA")//where is same as filter
   // filtering with expression strings
   val americanCarsDF = carsDF.filter("Origin = 'USA'")
   // chain filters
