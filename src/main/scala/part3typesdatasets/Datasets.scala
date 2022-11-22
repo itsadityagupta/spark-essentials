@@ -48,6 +48,10 @@ object Datasets extends App {
 
   // 3 - define an encoder (importing the implicits)
   import spark.implicits._
+
+  /**
+    * implicit val carEncoder = Encoder.product[Car]
+    */
   // 4 - convert the DF to DS
   val carsDS = carsDF.as[Car]
 
