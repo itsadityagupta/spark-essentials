@@ -17,7 +17,7 @@ object SparkShell extends App {
     *
     * To open the Spark SQL shell in the master container:
     *   1. In another terminal window/tab, connect to the Docker container and open a regular shell
-    *       docker exec -it docker-spark-cluster_spark-master_1 bash
+    *       docker exec -it spark-cluster_spark-master_1 bash
     *   2. Execute the Spark SQL shell
     *       /spark/bin/spark-sql
     *
